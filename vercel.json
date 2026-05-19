@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/knownet-web",
+  "outputDirectory": "dist/knownet-web/browser",
   "rewrites": [
     {
       "source": "/(.*)",
