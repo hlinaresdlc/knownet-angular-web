@@ -32,7 +32,7 @@ export class Contact {
     this.cdr.detectChanges();
 
     try {
-      const response = await fetch('http://100.104.22.88:3001/api/contact', {
+      const response = await fetch('http://api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(this.form)
