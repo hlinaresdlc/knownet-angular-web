@@ -1,0 +1,78 @@
+<div class="min-h-screen bg-slate-950 text-white">
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur">
+
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
+      <a routerLink="/" class="flex items-center">
+
+        <div class="flex flex-col items-start">
+
+          <img
+            src="/logo-header.png"
+            alt="KnowNet"
+            class="ml-[-20px] h-12 w-auto object-contain" />
+
+          <div class="mt-1 text-xs uppercase tracking-[0.35em] text-slate-400">
+            CONOCIMIENTO E INNOVACIÓN
+          </div>
+
+        </div>
+
+      </a>
+
+      <nav class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+
+        <a routerLink="/" class="hover:text-white">
+          Inicio
+        </a>
+
+        <a href="#servicios" class="hover:text-white">
+          Servicios
+        </a>
+
+        <a href="#verticales" class="hover:text-white">
+          Verticales
+        </a>
+
+        <a href="#valor" class="hover:text-white">
+          Valor
+        </a>
+
+        <a routerLink="/blog" class="hover:text-white">
+          Blog
+        </a>
+
+        <a routerLink="/contacto" class="hover:text-white">
+          Contacto
+        </a>
+
+      </nav>
+
+      <a
+        routerLink="/contacto"
+        class="rounded-2xl bg-blue-500 px-5 py-2 font-medium text-white hover:bg-blue-400">
+
+        Hablemos
+
+      </a>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <router-outlet></router-outlet>
+
+  </main>
+
+  <footer class="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-400">
+
+    © 2026 KnowNet.
+    Consultoría estratégica,
+    soluciones de negocio e ingeniería de software.
+
+  </footer>
+
+</div>

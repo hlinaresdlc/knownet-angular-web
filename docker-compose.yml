@@ -1,0 +1,8 @@
+services:
+  knownet-angular-web:
+    build: .
+    image: knownet-angular-image
+    container_name: knownet-angular-web
+    restart: unless-stopped
+    ports:
+      - "8088:80"

@@ -1,0 +1,42 @@
+<section class="min-h-screen px-6 py-24">
+
+  <div class="mx-auto max-w-4xl">
+
+    @if (post) {
+
+      <div class="mb-6 flex items-center gap-4">
+
+        <span class="rounded-full bg-blue-500/20 px-3 py-1 text-xs text-blue-200">
+          {{ post.category }}
+        </span>
+
+        <span class="text-sm text-slate-400">
+          {{ post.date }}
+        </span>
+
+      </div>
+
+      <h1 class="text-4xl font-bold md:text-6xl">
+        {{ post.title }}
+      </h1>
+
+      <div
+        class="prose prose-invert mt-10 max-w-none text-slate-300">
+
+        <pre class="whitespace-pre-wrap font-sans leading-8 text-slate-300">
+{{ post.content }}
+        </pre>
+
+      </div>
+
+    } @else {
+
+      <h1 class="text-4xl font-bold">
+        Artículo no encontrado
+      </h1>
+
+    }
+
+  </div>
+
+</section>
